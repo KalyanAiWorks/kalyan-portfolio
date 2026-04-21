@@ -278,7 +278,7 @@
     chatHistory.push({ role: "user", content: text });
     const t = addMsg("typing", "Thinking…");
     try {
-      const res = await fetch("https://apps-labeled-nsw-simpson.trycloudflare.com/chat", {
+      const res = await fetch("https://wallace-double-organizations-falls.trycloudflare.com/chat", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
