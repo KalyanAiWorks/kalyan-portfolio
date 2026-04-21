@@ -5,54 +5,74 @@ AOS.init();
 const techStackCards = document.querySelector(".techstack-box");
 const techStack = [
   {
-    langImage: "assets/images/techstack-page/html.png",
-    langName: "HyperText Markup Language",
-    langDesc: "<li>The HyperText Markup Language, or HTML is the standard markup language for documents designed to be displayed in a web browser</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/css.png",
-    langName: "Cascading Style Sheets",
-    langDesc: "<li>Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML</li>",
+    langImage: "assets/images/techstack-page/python.png",
+    langName: "Python",
+    langDesc: "<li>Primary language for AI automation, backend development, and data processing workflows</li>",
   },
   {
     langImage: "assets/images/techstack-page/javascript.png",
     langName: "JavaScript",
-    langDesc: "<li>JavaScript, often abbreviated JS, is a programming language that is one of the core technologies of the World Wide Web, alongside HTML and CSS</li>",
+    langDesc: "<li>Frontend development, n8n workflows, and interactive web applications</li>",
   },
   {
-    langImage: "assets/images/techstack-page/node.png",
-    langName: "Node",
-    langDesc: "<li>Node.js is an open-source, cross-platform, back-end JavaScript runtime environment that runs on the V8 engine and executes JavaScript code outside a web browser</li>",
+    langImage: "assets/images/techstack-page/typescript.png",
+    langName: "TypeScript",
+    langDesc: "<li>Type-safe development for scalable full-stack applications</li>",
   },
   {
-    langImage: "assets/images/techstack-page/python.png",
-    langName: "Python",
-    langDesc: "<li>Python is an interpreted high-level general-purpose programming language</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/cpp.png",
-    langName: "C++",
-    langDesc: "<li>C++ is a general-purpose programming language created by Bjarne Stroustrup as an extension of the C programming language, or C with Classes</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/git.png",
-    langName: "Git",
-    langDesc: "<li>Git is software for tracking changes in any set of files, usually used for coordinating work among programmers collaboratively developing source code during software development.</li>",
-  },
-  {
-    langImage: "assets/images/techstack-page/bootstrap.png",
-    langName: "Bootstrap",
-    langDesc: "<li>Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development</li>",
+    langImage: "assets/images/techstack-page/fastapi.png",
+    langName: "FastAPI",
+    langDesc: "<li>High-performance Python framework for building RESTful APIs and backend services</li>",
   },
   {
     langImage: "assets/images/techstack-page/react.png",
     langName: "React",
-    langDesc: "<li>React is a free and open-source front-end JavaScript library for building user interfaces based on UI components</li>",
+    langDesc: "<li>Component-based frontend library for building interactive dashboards and web UIs</li>",
   },
   {
-    langImage:"assets/images/techstack-page/c.png",
-    langName:"C",
-    langDesc:"<li>C is a general-purpose, procedural computer programming language supporting structured programming, lexical variable scope, and recursion, with a static type system</li>"
+    langImage: "assets/images/techstack-page/n8n.png",
+    langName: "n8n",
+    langDesc: "<li>Expert-level workflow automation for multi-channel campaigns and business process automation</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/langgraph.png",
+    langName: "LangGraph",
+    langDesc: "<li>Multi-agent orchestration for complex AI workflows and autonomous systems</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/langchain.png",
+    langName: "LangChain",
+    langDesc: "<li>LLM application development framework for building AI-powered automation</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/aws.png",
+    langName: "AWS EC2",
+    langDesc: "<li>Cloud infrastructure deployment for scalable AI services and automation pipelines</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/docker.png",
+    langName: "Docker",
+    langDesc: "<li>Containerization for consistent deployment across development and production environments</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/postgresql.png",
+    langName: "PostgreSQL",
+    langDesc: "<li>Relational database for data persistence, analytics, and transaction management</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/redis.png",
+    langName: "Redis",
+    langDesc: "<li>In-memory caching and real-time data processing for high-performance applications</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/claude.png",
+    langName: "Claude API",
+    langDesc: "<li>AI-powered personalization and intelligent automation using Anthropic's Claude models</li>",
+  },
+  {
+    langImage: "assets/images/techstack-page/nginx.png",
+    langName: "nginx",
+    langDesc: "<li>Reverse proxy and load balancing for production web services</li>",
   },
 ];
 

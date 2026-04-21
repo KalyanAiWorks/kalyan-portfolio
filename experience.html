@@ -2,7 +2,7 @@
 <html lang="en" light-mode="dark">
 
 <head>
-    <title>John Doe | Experience</title>
+    <title>Kalyan J | Experience</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="free portfolio template,portfolio template, portfolio website template, open source, open sourcing, contributing to open source" />
@@ -12,15 +12,15 @@
     <meta name="Googlebot" content="index,follow" />
     <meta name="AdsBot-Google" content="index,follow" />
     <meta property="og:site_name" content="https://portfolio.smaranjitghose.codes/experience.html">
-    <meta property="og:title" content="John Doe | Experience">
+    <meta property="og:title" content="Kalyan J | Experience">
     <meta property="og:description" content="This project serves as a free and beautiful portfolio template for everyone. Anyone can showcase their work including moocs, education, projects, experience,etc. to the world.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://portfolio.smaranjitghose.codes/experience.html">
     <meta name="twitter:card" content="summary">
     <meta name="twitter:site" content="https://portfolio.smaranjitghose.codes/experience.html">
 
-    <meta name="application-name" content="John Doe | Experience" />
-    <meta name="apple-mobile-web-app-title" content="John Doe | Experience" />
+    <meta name="application-name" content="Kalyan J | Experience" />
+    <meta name="apple-mobile-web-app-title" content="Kalyan J | Experience" />
     <meta name="summary" content="An open source project aimed at providing free and beautiful templates to everyone for building their portfolio websites and showcase their work to the world." />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
     <!--For Dark/Light mode Toggle-->
@@ -52,6 +52,377 @@
 
         gtag('config', 'G-M11CMZ12Q');
     </script>
+
+    <!-- Enhanced Experience Card Styles -->
+    <style>
+        .exp-card {
+            background: #fff;
+            border-radius: 16px;
+            padding: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            border-left: 5px solid #6c5ce7;
+            height: 100%;
+        }
+
+        .exp-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+        }
+
+        .exp-card-header {
+            display: flex;
+            align-items: flex-start;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .exp-icon {
+            width: 70px;
+            height: 70px;
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2rem;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+        }
+
+        .exp-card:hover .exp-icon {
+            transform: scale(1.1) rotate(5deg);
+        }
+
+        .exp-title-section {
+            flex: 1;
+        }
+
+        .exp-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2d3436;
+            margin: 0 0 0.5rem 0;
+            line-height: 1.3;
+        }
+
+        .exp-company {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #636e72;
+            margin: 0;
+        }
+
+        .exp-meta {
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+            margin-bottom: 1rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #f0f0f0;
+        }
+
+        .exp-time {
+            color: #636e72;
+            font-size: 0.95rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .exp-duration {
+            background: #f0f0f0;
+            color: #2d3436;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+        }
+
+        .exp-highlight {
+            margin-bottom: 1.5rem;
+        }
+
+        .highlight-badge {
+            display: inline-block;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: #fff;
+        }
+
+        .exp-description ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .exp-description li {
+            padding-left: 1.5rem;
+            margin-bottom: 0.8rem;
+            position: relative;
+            color: #2d3436;
+            line-height: 1.6;
+            font-size: 0.95rem;
+        }
+
+        .exp-description li:before {
+            content: "▹";
+            position: absolute;
+            left: 0;
+            font-size: 1.2rem;
+            line-height: 1.4;
+        }
+
+        .exp-description li strong {
+            color: #6c5ce7;
+            font-weight: 700;
+        }
+
+        /* Color Themes - Works for both layouts */
+        .tech-purple, .exp-card-horizontal.tech-purple {
+            border-left-color: #6c5ce7;
+        }
+
+        .tech-purple .exp-icon, .exp-card-horizontal.tech-purple .exp-icon {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+        }
+
+        .tech-purple .highlight-badge, .exp-card-horizontal.tech-purple .highlight-badge {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .tech-purple .exp-description li:before, .exp-card-horizontal.tech-purple .exp-description li:before {
+            color: #6c5ce7;
+        }
+
+        .geo-green, .exp-card-horizontal.geo-green {
+            border-left-color: #00b894;
+        }
+
+        .geo-green .exp-icon, .exp-card-horizontal.geo-green .exp-icon {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+            color: #fff;
+        }
+
+        .geo-green .highlight-badge, .exp-card-horizontal.geo-green .highlight-badge {
+            background: linear-gradient(135deg, #11998e 0%, #38ef7d 100%);
+        }
+
+        .geo-green .exp-description li:before, .exp-card-horizontal.geo-green .exp-description li:before {
+            color: #00b894;
+        }
+
+        .telco-orange, .exp-card-horizontal.telco-orange {
+            border-left-color: #fd79a8;
+        }
+
+        .telco-orange .exp-icon, .exp-card-horizontal.telco-orange .exp-icon {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+            color: #fff;
+        }
+
+        .telco-orange .highlight-badge, .exp-card-horizontal.telco-orange .highlight-badge {
+            background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+        }
+
+        .telco-orange .exp-description li:before, .exp-card-horizontal.telco-orange .exp-description li:before {
+            color: #fd79a8;
+        }
+
+        .samsung-blue, .exp-card-horizontal.samsung-blue {
+            border-left-color: #0984e3;
+        }
+
+        .samsung-blue .exp-icon, .exp-card-horizontal.samsung-blue .exp-icon {
+            background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+            color: #fff;
+        }
+
+        .samsung-blue .highlight-badge, .exp-card-horizontal.samsung-blue .highlight-badge {
+            background: linear-gradient(135deg, #0093E9 0%, #80D0C7 100%);
+        }
+
+        .samsung-blue .exp-description li:before, .exp-card-horizontal.samsung-blue .exp-description li:before {
+            color: #0984e3;
+        }
+
+        /* Project Showcase Cards */
+        .exp-projects {
+            margin-top: 2rem;
+            padding-top: 2rem;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .projects-title {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #2d3436;
+            margin-bottom: 1.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .projects-title i {
+            color: #6c5ce7;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .project-card {
+            background: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 12px;
+            padding: 1.25rem;
+            display: flex;
+            gap: 1rem;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            position: relative;
+        }
+
+        .project-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-color: #6c5ce7;
+        }
+
+        .project-card.has-link {
+            cursor: pointer;
+        }
+
+        .project-card.has-link:hover {
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+        }
+
+        .project-icon {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 1.3rem;
+            flex-shrink: 0;
+        }
+
+        .project-content {
+            flex: 1;
+        }
+
+        .project-name {
+            font-size: 1rem;
+            font-weight: 700;
+            color: #2d3436;
+            margin: 0 0 0.5rem 0;
+        }
+
+        .project-desc {
+            font-size: 0.85rem;
+            color: #636e72;
+            margin: 0;
+            line-height: 1.5;
+        }
+
+        .project-link-icon {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            color: #6c5ce7;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .project-card.has-link:hover .project-link-icon {
+            opacity: 1;
+        }
+
+        /* Horizontal Row Layout */
+        .experience-cards {
+            display: flex;
+            flex-wrap: nowrap;
+            gap: 2rem;
+            overflow-x: auto;
+            padding: 2rem 1rem;
+            scroll-snap-type: x mandatory;
+            -webkit-overflow-scrolling: touch;
+        }
+
+        .experience-cards::-webkit-scrollbar {
+            height: 8px;
+        }
+
+        .experience-cards::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 4px;
+        }
+
+        .experience-cards::-webkit-scrollbar-thumb {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 4px;
+        }
+
+        .exp-card-horizontal {
+            flex: 0 0 500px;
+            background: #fff;
+            border-radius: 20px;
+            padding: 2rem;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            border-left: 5px solid #6c5ce7;
+            scroll-snap-align: start;
+            max-height: 85vh;
+            overflow-y: auto;
+        }
+
+        .exp-card-horizontal:hover {
+            transform: translateY(-8px) scale(1.02);
+            box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .exp-card-horizontal .exp-projects {
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 2px solid #f0f0f0;
+        }
+
+        .exp-card-horizontal .projects-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 0.75rem;
+        }
+
+        @media (max-width: 768px) {
+            .experience-cards {
+                padding: 1rem;
+                gap: 1.5rem;
+            }
+
+            .exp-card-horizontal {
+                flex: 0 0 340px;
+                padding: 1.5rem;
+            }
+
+            .exp-icon {
+                width: 55px;
+                height: 55px;
+                font-size: 1.5rem;
+            }
+
+            .exp-title {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
 
 </head>
 
@@ -163,65 +534,26 @@
           </svg>
                     </div>
                     <div class="dropdown px-md-5 col-md-6 d-flex flex-column align-items-center justify-content-center animate__animated animate__fadeInUp animate__delay-1s">
-                        <h2 class="main-heading mb-0 experience_head">My <span class="my_experience">Experience</span></h2>
+                        <h2 class="main-heading mb-0 experience_head" style="font-size:3.5rem;">My <span class="my_experience">Experience</span></h2>
                         <p class="pre-heading font-weight-bolder text-center animate__animated animate__fadeInUp animate__delay-2s">
-                            Nothing ever becomes real 'til it is experienced.― John Keats
+                            <span style="font-size:1.4rem;">Nothing ever becomes real 'til it is experienced.― Kalyan Jatothu</span>
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <h4 class="text-center heading1 exp-head">Work <span class="my_experience">Experience</span></h4>
+    </div>
+
+    <div class="main pt-5">
+        <h4 class="text-center heading1 exp-head" style="font-size:2.8rem;">Work <span class="my_experience">Experience</span></h4>
 
         <!-- work experience Card -->
 
-        <main class="container experience-cards">
-            <!-- Dynamic experience Card -->
-
-        </main>
-    </div>
-
-    <div class="main1 pt-1">
-        <h4 class="text-center heading1">Open <span class="my_experience">Source</span></h4>
-
-        <!-- Hackathon Section -->
-
-        <main class="page-content volunteership">
-            <!-- Dynamic Hackathon Section -->
-
-        </main>
-
-      
-    </div>
-
-
-    
-    
-    <div>
-        <h4 class="text-center heading1 mcard">Hackathon <span class="my_experience">Participation</span></h4>
-
-        <!-- Mentorship Card -->
-
-        <main class="">
-         
-            <div class="blog-slider mb-5 mt-5">
-               <div class="blog-slider__wrp swiper-wrapper hackathon-section">
-                <div class="blog-slider__item swiper-slide">
-                    <div class="blog-slider__img">
-                        <img src="${image}" alt="">
-                    </div>
-                    <div class="blog-slider__content">
-                      <div class="blog-slider__title">${title}</div>
-                      <span class="blog-slider__code">${subtitle}</span>
-                      <div class="blog-slider__text">${desp}</div>
-                      <a href="#" class="blog-slider__button">Read More</a>   
-                    </div>
-                  </div>    
-               </div>
-                <div class="blog-slider__pagination"></div>
+        <main class="container-fluid px-4">
+            <div class="experience-cards">
+                <!-- Dynamic experience cards load here from experience.js -->
             </div>
-            
         </main>
     </div>
 
@@ -263,6 +595,17 @@
      </script>
          <script src="assets/js/experience.js"></script>
 
-</body>
+<canvas id="particles" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none;"></canvas><script src="particles.js"></script><canvas id="particles" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:-1;pointer-events:none;"></canvas><script src="particles.js"></script><canvas id="particles" style="position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas><script src="particles.js"></script><canvas id='particles' style='position:fixed;top:0;left:0;width:100%;height:100%;z-index:0;pointer-events:none;'></canvas>
+<script>
+const c=document.getElementById('particles'),x=c.getContext('2d');
+function r(){c.width=window.innerWidth;c.height=window.innerHeight}r();
+window.addEventListener('resize',r);
+const d=Array.from({length:150},()=>({x:Math.random()*c.width,y:Math.random()*c.height,vx:(Math.random()-.5)*.8,vy:(Math.random()-.5)*.8,r:Math.random()*5+2}));
+function draw(){
+x.clearRect(0,0,c.width,c.height);
+d.forEach(a=>{a.x+=a.vx;a.y+=a.vy;if(a.x<0||a.x>c.width)a.vx*=-1;if(a.y<0||a.y>c.height)a.vy*=-1;x.beginPath();x.arc(a.x,a.y,a.r,0,Math.PI*2);x.fillStyle='rgba(0,210,180,0.7)';x.fill()});
+d.forEach((a,i)=>d.slice(i+1).forEach(b=>{const dist=Math.hypot(a.x-b.x,a.y-b.y);if(dist<180){x.beginPath();x.moveTo(a.x,a.y);x.lineTo(b.x,b.y);x.strokeStyle='rgba(0,210,180,'+(1-dist/120)+')';x.lineWidth=0.4;x.stroke()}}));
+requestAnimationFrame(draw)}draw();
+</script></body>
 
 </html>
