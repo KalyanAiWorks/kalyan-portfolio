@@ -278,12 +278,13 @@
     chatHistory.push({ role: "user", content: text });
     const t = addMsg("typing", "Thinking…");
     try {
-      const res = await fetch("https://win-roger-imports-continuing.trycloudflare.com/chat", {
+      const res = await fetch("https://apps-labeled-nsw-simpson.trycloudflare.com/chat", {
         method: "POST",
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          
           messages: [{ role: "system", content: SYSTEM_PROMPT }, ...chatHistory],
-          max_tokens: 300, temperature: 0.7
+          max_tokens: 300,
+          temperature: 0.7
         })
       });
       const data = await res.json();
