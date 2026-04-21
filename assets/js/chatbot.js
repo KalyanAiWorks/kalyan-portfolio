@@ -278,11 +278,10 @@
     chatHistory.push({ role: "user", content: text });
     const t = addMsg("typing", "Thinking…");
     try {
-      const res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
+      const res = await fetch("http://35.154.136.77:3000/chat", {
         method: "POST",
-        headers: { "Content-Type": "application/json", "Authorization": "Bearer " + GROQ_API_KEY },
         body: JSON.stringify({
-          model: GROQ_MODEL,
+          
           messages: [{ role: "system", content: SYSTEM_PROMPT }, ...chatHistory],
           max_tokens: 300, temperature: 0.7
         })
