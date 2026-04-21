@@ -278,7 +278,7 @@
     chatHistory.push({ role: "user", content: text });
     const t = addMsg("typing", "Thinking…");
     try {
-      const res = await fetch("http://35.154.136.77:3000/chat", {
+      const res = await fetch("https://win-roger-imports-continuing.trycloudflare.com/chat", {
         method: "POST",
         body: JSON.stringify({
           
