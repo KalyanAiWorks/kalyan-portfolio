@@ -5,19 +5,31 @@ AOS.init();
 const experiencecards = document.querySelector(".experience-cards");
 const exp = [
   {
-    title: "Business Development Specialist & AI Automation Developer",
+    title: "Business Development Specialist & AI Automation Developer / AI-Powered Sales, Marketing & Lead Generation Specialist",
     place: "Rotomaker VFX & AdsAI",
     time: "2024 - Present",
     duration: "Current Role",
-    highlight: "International Client Acquisition • B2B Automation Expert",
+    highlight: "Business Development • Lead Generation • Sales Operations • Client Acquisition • Sales Automation • Marketing Automation • AWS Cloud Infrastructure",
     icon: "fas fa-robot",
     colorClass: "tech-purple",
-    desp: "<li>Built B2B outreach automation systems using n8n workflows for multi-channel campaigns (LinkedIn, WhatsApp, Gmail)</li><li>Developed 9-agent LangGraph pipeline on AWS EC2 for automated lead generation and outreach</li><li>Created full-stack dashboards (FastAPI + React + PostgreSQL + Redis) for sales tracking and contact management</li><li>Implemented Claude API-powered email personalization and automated campaign scheduling</li><li>International client acquisition automation with SerpAPI integration for Google Maps business data extraction</li><li><strong>Scale Metrics:</strong> 11,078 YC founders scraped • 6,226 event exhibitors processed • 7 cities (NYC, LA, Toronto, Vancouver, Stuttgart, London, Vegas) • 631 contacts tracked in real-time</li>",
+    desp: "<li>Built B2B outreach automation systems using n8n workflows for multi-channel campaigns (LinkedIn, WhatsApp, Gmail)</li><li>Developed 9-agent LangGraph pipeline on AWS EC2 for automated lead generation and outreach</li><li>Built AI-powered Gmail-Telegram approval system — incoming client emails auto-forward to Telegram, AI drafts a reply, I review/approve directly in Telegram, and it sends back through Gmail — deployed across 4 businesses (Rotomaker, AdsAI, HybridFilms, Career Visa Overseas)</li><li>Scrape and identify potential client data — emails, phone numbers, decision-maker contacts — using AI-powered tools</li><li>Manage full sales cycle: prospecting → email/WhatsApp outreach → follow-ups → client meetings → requirement gathering</li><li>Marketing & outreach execution: multi-channel campaign scheduling, Claude API-powered email personalization, social media auto-post automation</li><li>Created full-stack dashboards (FastAPI + React + PostgreSQL + Redis) for sales tracking and contact management</li><li>Manage AWS EC2 (ap-south-1) production infrastructure — LiteLLM proxy routing to AWS Bedrock, S3 storage, n8n Cloud — powering all automation and outreach systems</li><li>Handle bid/quotation coordination, approval workflows, and continuous follow-up through deal closure</li><li><strong>Drive end-to-end lead generation</strong> — sourcing, qualifying, and converting prospects into scheduled client meetings</li>",
     projects: [
       {
         name: "AdsAI B2B Outreach System",
         desc: "9-agent LangGraph pipeline • Multi-channel automation • 7 cities worldwide",
         icon: "fas fa-network-wired",
+        link: ""
+      },
+      {
+        name: "Multi-Business n8n Automation Hub",
+        desc: "40+ production workflows across 6 businesses • Telegram approval bots • WhatsApp AI agents • 1,200+ executions",
+        icon: "fas fa-cogs",
+        link: ""
+      },
+      {
+        name: "Production AI Infrastructure Stack",
+        desc: "AWS EC2 + Bedrock (LiteLLM proxy) • S3 • n8n Cloud",
+        icon: "fas fa-server",
         link: ""
       },
       {
@@ -37,6 +49,12 @@ const exp = [
         desc: "Animated landing page • AI chatbot booking • WhatsApp integration",
         icon: "fas fa-heartbeat",
         link: ""
+      },
+      {
+        name: "AI-Built Client Website Portfolio",
+        desc: "7 production sites — Career Visa Overseas, Skyline AI Caterers, Prem Nirvana Caterers, Pro Realtor Me, Kings Tea, Tanvika Enterprises, Ramesh Portfolio",
+        icon: "fas fa-globe",
+        link: "https://github.com/KalyanAiWorks/career-visa-overseas"
       },
       {
         name: "Kalyan Construction",
