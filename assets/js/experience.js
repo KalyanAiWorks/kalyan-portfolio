@@ -45,12 +45,6 @@ const exp = [
         link: ""
       },
       {
-        name: "ReLife Physiotherapy Website",
-        desc: "Animated landing page • AI chatbot booking • WhatsApp integration",
-        icon: "fas fa-heartbeat",
-        link: ""
-      },
-      {
         name: "AI-Built Client Website Portfolio",
         desc: "7 production sites — Career Visa Overseas, Skyline AI Caterers, Prem Nirvana Caterers, Pro Realtor Me, Kings Tea, Tanvika Enterprises, Ramesh Portfolio",
         icon: "fas fa-globe",
