@@ -1,10 +1,46 @@
-AOS.init();
+init();
 /* Project Cards */
 
 const projectcards = document.querySelector(".projectcards");
 
 // Array of project objects with enhanced data
 const projects = [
+  {
+    title: "Multi-Business n8n Automation Hub",
+    description: "40+ production workflows across 6 businesses • 1,200+ executions",
+    icon: "fas fa-cogs",
+    gradient: "linear-gradient(135deg, #667EEA 0%, #764BA2 100%)",
+    techStack: ["n8n", "Telegram", "WhatsApp", "Gmail API", "Respond.io"],
+    Githublink: "",
+    category: "Automation"
+  },
+  {
+    title: "AWS-Based Lead Scraping Engine",
+    description: "Self-hosted AWS EC2 server scrapes decision-maker contact data for outreach at scale",
+    icon: "fas fa-database",
+    gradient: "linear-gradient(135deg, #FF6B35 0%, #F7931E 100%)",
+    techStack: ["AWS EC2", "Python", "Lead Generation"],
+    Githublink: "",
+    category: "Lead Generation"
+  },
+  {
+    title: "Production AI Infrastructure Stack",
+    description: "Self-managed AWS EC2 stack running LiteLLM proxy (Bedrock routing), n8n Cloud, deployed AI agents",
+    icon: "fas fa-server",
+    gradient: "linear-gradient(135deg, #232526 0%, #414345 100%)",
+    techStack: ["AWS EC2", "AWS Bedrock", "S3", "LiteLLM", "n8n"],
+    Githublink: "",
+    category: "Cloud Infrastructure"
+  },
+  {
+    title: "AI-Built Client Website Portfolio",
+    description: "7 production business websites built end-to-end using AI-assisted coding",
+    icon: "fas fa-globe",
+    gradient: "linear-gradient(135deg, #11998E 0%, #38EF7D 100%)",
+    techStack: ["JavaScript", "TypeScript", "Claude"],
+    Githublink: "https://github.com/KalyanAiWorks/career-visa-overseas",
+    category: "Web Development"
+  },
   {
     title: "Google Maps to Respond.io Pipeline",
     description: "Automated lead extraction and WhatsApp outreach",
@@ -58,24 +94,6 @@ const projects = [
     techStack: ["Claude Haiku", "Telegram", "Tavily", "AWS EC2"],
     Githublink: "",
     category: "AI Gateway"
-  },
-  {
-    title: "ReLife Physiotherapy Website",
-    description: "Healthcare landing page with AI booking chatbot",
-    icon: "fas fa-heartbeat",
-    gradient: "linear-gradient(135deg, #11998E 0%, #38EF7D 100%)",
-    techStack: ["JavaScript", "AI Chatbot", "WhatsApp", "Booking"],
-    Githublink: "",
-    category: "Web Development"
-  },
-  {
-    title: "Kalyan Construction",
-    description: "TypeScript full-stack site with AI inquiry chatbot",
-    icon: "fas fa-building",
-    gradient: "linear-gradient(135deg, #F09819 0%, #EDDE5D 100%)",
-    techStack: ["TypeScript", "Full-Stack", "AI Chatbot"],
-    Githublink: "https://github.com/KalyanAiWorks/kalyan-construction",
-    category: "Web Development"
   },
   {
     title: "Mike Bags Dashboard",
