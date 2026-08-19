@@ -7,7 +7,7 @@ const exp = [
   {
     title: "Business Development Specialist & AI Automation Developer / AI-Powered Sales, Marketing & Lead Generation Specialist",
     place: "Rotomaker VFX & AdsAI",
-    time: "2024 - Present",
+    time: "2022 - Present",
     duration: "Current Role",
     highlight: "Business Development • Lead Generation • Sales Operations • Client Acquisition • Sales Automation • Marketing Automation • AWS Cloud Infrastructure",
     icon: "fas fa-robot",
@@ -33,9 +33,9 @@ const exp = [
         link: ""
       },
       {
-        name: "Respond.io Tracker Dashboard",
-        desc: "FastAPI + React + PostgreSQL + Redis • 631 contacts synced • Real-time sales intelligence",
-        icon: "fas fa-chart-line",
+        name: "AWS-Based Lead Scraping Engine",
+        desc: "Self-hosted AWS EC2 server scrapes company and decision-maker data — emails, phone numbers, business contacts — for outreach at scale",
+        icon: "fas fa-database",
         link: ""
       },
       {
@@ -55,12 +55,6 @@ const exp = [
         desc: "7 production sites — Career Visa Overseas, Skyline AI Caterers, Prem Nirvana Caterers, Pro Realtor Me, Kings Tea, Tanvika Enterprises, Ramesh Portfolio",
         icon: "fas fa-globe",
         link: "https://github.com/KalyanAiWorks/career-visa-overseas"
-      },
-      {
-        name: "Kalyan Construction",
-        desc: "TypeScript full-stack • AI chatbot for inquiries",
-        icon: "fas fa-building",
-        link: "https://github.com/KalyanAiWorks/kalyan-construction"
       },
       {
         name: "Mike Bags Dashboard",
